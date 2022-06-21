@@ -40,25 +40,13 @@ export default function Contact() {
           </p>
           <form>
             <label className="nama">Nama</label>
-            <input
-              className="tem-nama"
-              type="text"
-              placeholder="ketikkan nama..."
-            />
+            <input className="tem-nama" type="text" />
             <label className="email">Email</label>
-            <input
-              className="tem-email"
-              type="email"
-              placeholder="ketikkan email..."
-            />
+            <input className="tem-email" type="email" />
             <label className="subject">Subject/topik</label>
-            <input
-              className="tem-subject"
-              type="text"
-              placeholder="ketikkan subject..."
-            />
+            <input className="tem-subject" type="text" />
             <label className="pesan">Pesan</label>
-            <textarea className="tem-pesan" placeholder="ketikkan pesan..." />
+            <textarea className="tem-pesan" />
             <button className="kirim" type="submit">
               Kirim
             </button>
