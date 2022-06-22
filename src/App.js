@@ -1,4 +1,4 @@
-import Contact from './pages/contact';
+import ContactForm from './pages/ContactForm';
 // import './App.css';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <div className="container">
-        <Contact />
+        <ContactForm />
       </div>
     </div>
   );
