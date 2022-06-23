@@ -1,38 +1,79 @@
 body {
-  background-image: linear-gradient(#1b3132 20%, #ffffff 140%);
-  margin-left: 150px;
-  margin-right: 150px;
+  /* background-image: linear-gradient(#1b3132 20%, #ffffff 140%); */
+  /* margin-left: 150px;
+  margin-right: 150px; */
+}
+
+/* Bagian Header */
+header {
+  background-color: #99b2b4;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+header img {
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 25pt;
+  font-family: 'Poppins', sans-serif;
+  color: #1b3132;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+header h3 {
+  font-size: 13pt;
+  font-family: 'Raleway', sans-serif;
+  color: #1b3132;
+  margin-bottom: 0;
+}
+
+header p {
+  font-size: 12pt;
+  font-family: 'Raleway', sans-serif;
+  color: #1b3132;
+  padding-bottom: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 /* Bagian Profil */
 .profil {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .profil h1 {
   font-size: 25pt;
   font-family: 'Poppins', sans-serif;
-  color: #ffffff;
+  color: #1b3132;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .card-name {
   width: 190px;
   border-radius: 7px;
-  text-align: center;
   padding-top: 15px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .ganjil {
-  background-color: rgba(104, 154, 157, 0.6);
+  background-color: rgba(104, 154, 157, 1);
 }
 
 .genap {
-  background-color: rgba(120, 137, 138, 0.6);
+  background-color: rgba(120, 137, 138, 1);
 }
 
 .card-name img {
@@ -61,95 +102,82 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 0px;
   margin-top: 20px;
-  margin-left: 80px;
-  margin-right: 67px;
 }
 
 /* Bagian Kritik dan Saran */
 .form h1 {
   font-size: 25pt;
   font-family: 'Poppins', sans-serif;
-  color: #ffffff;
+  color: #1b3132;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.form p {
+  color: #1b3132;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
 }
 
 .form-item {
-  color: #ffffff;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin: 0 auto;
+  width: 350px;
   padding-top: 5px;
   padding-bottom: 20px;
   border-radius: 7px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: rgba(102, 151, 154, 0.55);
+  /* border: 1.5px solid rgba(255, 255, 255, 0.5); */
+  /* background-color: rgba(102, 151, 154, 0.55); */
 }
 
 /* form pake grid */
 form {
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   display: grid;
   row-gap: 10px;
-  grid-template-areas: 'nama tem-nama tem-nama tem-nama' 'email tem-email tem-email tem-email' 'subject tem-subject tem-subject tem-subject' 'pesan pesan pesan pesan' 'tem-pesan tem-pesan tem-pesan tem-pesan' 'kirim kirim kirim kirim';
-  grid-template-colums: 1fr 1fr 1fr;
-  grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 7fr 1.7fr;
+  grid-template-rows: 1fr;
 }
 
-.nama {
-  grid-area: nama;
-}
-.tem-nama {
-  grid-area: tem-nama;
-}
-.email {
-  grid-area: email;
-}
-.tem-email {
-  grid-area: tem-email;
-}
-.subject {
-  grid-area: subject;
-}
-.tem-subject {
-  grid-area: tem-subject;
-}
-.pesan {
-  grid-area: pesan;
-}
-.tem-pesan {
-  grid-area: tem-pesan;
-}
 .kirim {
-  grid-area: kirim;
   width: 100px;
   background-color: transparent;
   border: 1.5px solid rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
+  border-radius: 15px;
+  margin: 0 auto;
 }
-
-/* form pake flex */
-/* form {
-  width: 100%;
-}
-form label {
-  display: flex;
-  justify-content: flex-start;
-} */
 
 .form {
-  margin-bottom: 40px;
+  background-color: #99b2b4;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .form input {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
   border-style: none;
 }
 
 .form textarea {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
   border-style: none;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #99b2b4;
+  padding-bottom: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+footer img {
+  width: 30px;
+  margin: 10px;
 }

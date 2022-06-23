@@ -1,4 +1,3 @@
-// import axios from 'axios';
 import React, { useState, useRef } from 'react';
 import './contact.css';
 
@@ -25,7 +24,18 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="profil">
+      <header>
+        <img src={require('./../image/ava.jpg')} alt="avatar" />
+        <h1>WaterDect</h1>
+        <h3>Front-End Disaster Management 3 Group</h3>
+        <p>
+          Sebuah website gallery yang menampilkan beberapa berita terkini dan
+          gambar yang memberikan informasi mengenai daerah-daerah di Indonesia
+          yang akan dan mengalami kekeringan, sehingga masyarakat Indonesia
+          dapat melakukan pencegahan dini terhadap kekeringan yang akan datang.
+        </p>
+      </header>
+      <main className="profil">
         <h1>Profil Kelompok</h1>
         <div className="grid">
           <div className="card-name ganjil">
@@ -49,38 +59,33 @@ export default function ContactForm() {
             <p>Mentor</p>
           </div>
         </div>
-      </div>
+        <h3>Generasi GIGIH 2.0 by YABB-GoTo</h3>
+      </main>
       <div className="form">
         <h1>Kritik dan Saran</h1>
+        {/* <p>
+          Jika Anda memiliki suatu keluhan, kritik, atau saran seputar website
+          ini, silakan masukkan keluhan Anda pada form isian di bawah ini.
+          Kritik dan saran Anda akan sangat membantu dalam mengembangkan website
+          ini. Terima Kasih.
+        </p> */}
         <div className="form-item">
-          <p>
-            Jika Anda memiliki suatu keluhan, kritik, atau saran seputar website
-            ini, silakan masukkan keluhan Anda pada form isian di bawah ini.
-            Kritik dan saran Anda akan sangat membantu demi kebaikan sistem ini.
-            Terima Kasih.
-          </p>
           <form
             method="post"
             ref={formRef}
             onSubmit={handleSubmit}
             name="google-sheet"
           >
-            <label className="nama" htmlFor="name">
-              Nama
-            </label>
-            <input className="tem-nama" type="text" name="nama" />
-            <label className="email" htmlFor="name">
-              Email
-            </label>
-            <input className="tem-email" type="email" name="email" />
-            <label className="subject" htmlFor="name">
-              Subject/topik
-            </label>
-            <input className="tem-subject" type="text" name="topik" />
+            <label htmlFor="name">Nama</label>
+            <input type="text" name="nama" />
+            <label htmlFor="name">Email</label>
+            <input type="email" name="email" />
+            <label htmlFor="name">Subject/topik</label>
+            <input type="text" name="topik" />
             <label className="pesan" htmlFor="name">
               Pesan
             </label>
-            <textarea className="tem-pesan" name="pesan" />
+            <textarea name="pesan" />
             <button
               className="kirim"
               type="submit"
@@ -91,6 +96,12 @@ export default function ContactForm() {
           </form>
         </div>
       </div>
+      <footer>
+        <img src={require('./../image/sosmed/ig.png')} alt="Instagram" />
+        <img src={require('./../image/sosmed/wa.png')} alt="WhatsApp" />
+        <img src={require('./../image/sosmed/fb.png')} alt="Facebook" />
+        <img src={require('./../image/sosmed/twt.png')} alt="Twitter" />
+      </footer>
     </>
   );
 }
